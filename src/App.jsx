@@ -1,8 +1,12 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/Homepage'; // Import your HomePage component
+
 function App() {
   return (
-    <div className="text-center p-10">
-      <h1 className="text-3xl font-bold text-blue-500">Hello, React + Tailwind CSS!</h1>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} /> {/* Direct root path to HomePage */}
+      </Routes>
   );
 }
 

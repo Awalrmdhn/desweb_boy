@@ -5,29 +5,11 @@ import backgroundImage from '../assets/background.png';
 import dropPointImage1 from '../assets/dropPoint1.png'; // ganti dengan path gambar sesuai lokasi
 import dropPointImage2 from '../assets/dropPoint2.png';
 import dropPointImage3 from '../assets/dropPoint3.png';
+import Navbar from '../component/navbar';
 
-const HomePage = () => {
+const DropPoint = () => {
   return (
     <div>
-      {/* Navbar Section */}
-      <nav className="bg-gray-800 text-white py-4">
-        <div className="container mx-auto flex justify-between items-center max-w-6xl">
-          {/* Logo */}
-          <div className="logo flex items-center">
-            <img src={logoImage} alt="Logo" className="h-10 w-10 mr-3" />
-          </div>
-
-          {/* Menu Links */}
-          <div className="menu-links">
-            <a href="#" className="text-white mr-6 hover:text-gray-400">About Us</a>
-            <a href="#" className="text-white mr-6 hover:text-gray-400">Drop Point</a>
-            <a href="#" className="text-white mr-6 hover:text-gray-400">Wash</a>
-            <a href="#" className="text-white mr-6 hover:text-gray-400">Course</a>
-            <a href="#" className="text-white hover:text-gray-400">Store</a>
-          </div>
-        </div>
-      </nav>
-
       {/* Banner Section */}
       <div className="relative bg-cover bg-center h-64" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
@@ -81,4 +63,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default DropPoint;

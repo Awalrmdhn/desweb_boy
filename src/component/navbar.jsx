@@ -18,6 +18,8 @@ const Navbar = () => {
           <a href="#" className="text-gray-800 hover:text-gray-600">Wash</a>
           <a href="/Kursus" className="text-gray-800 hover:text-gray-600">Course</a>
           <a href="#" className="text-gray-800 hover:text-gray-600">Store</a>
+          <a href="#" className="text-gray-800 hover:text-gray-600">Course</a>
+          <a href="/Store" className="text-gray-800 hover:text-gray-600">Store</a>
         </div>
       </div>
     </nav>

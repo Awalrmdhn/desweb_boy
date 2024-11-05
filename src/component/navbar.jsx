@@ -13,9 +13,8 @@ const Navbar = () => {
         {/* Menu Links */}
         <div className="flex space-x-8 mr-20">
         <a href="/" className="text-gray-800 hover:text-gray-600">Home</a>
-          <a href="#" className="text-gray-800 hover:text-gray-600">About Us</a>
+          <a href="/about" className="text-gray-800 hover:text-gray-600">About Us</a>
           <a href="/DropPoint" className="text-gray-800 hover:text-gray-600">Drop Point</a>
-          <a href="#" className="text-gray-800 hover:text-gray-600">Wash</a>
           <a href="/Kursus" className="text-gray-800 hover:text-gray-600">Course</a>
           <a href="/Store" className="text-gray-800 hover:text-gray-600">Store</a>
         </div>

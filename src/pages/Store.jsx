@@ -1,16 +1,17 @@
 import React from 'react';
 import productImage from '../assets/item_1.png'; 
+import HeroImage from '../assets/hero_image.png';
 import Navbar from '../component/navbar';
 
 const Store = () => {
   // Data produk
   const products = [
-    { name: "Sikat Medium", image: productImage, link: "#" },
-    { name: "Sikat Kecil", image: productImage, link: "#" },
-    { name: "Pembersih Sepatu", image: productImage, link: "#" },
-    { name: "Pengering Sepatu", image: productImage, link: "#" },
-    { name: "Pelindung Sepatu", image: productImage, link: "#" },
-    { name: "Sikat Khusus", image: productImage, link: "#" },
+    { name: "Sikat Medium", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
+    { name: "Sikat Kecil", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
+    { name: "Pembersih Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
+    { name: "Pengering Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
+    { name: "Pelindung Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
+    { name: "Sikat Khusus", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
   ];
 
   return (
@@ -30,7 +31,7 @@ const Store = () => {
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-5xl mt-10 mx-auto">
         <h3 className="text-2xl font-bold mb-6">Store</h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {products.map((product, index) => (
             <div
               key={index} 
@@ -42,6 +43,8 @@ const Store = () => {
                 <hr className="my-2 border-gray-400" />
                 <a
                   href={product.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded transition duration-300 ease-in-out hover:bg-blue-600 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   Link Produk

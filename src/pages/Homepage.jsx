@@ -1,32 +1,22 @@
 import React from "react";
-import BannerBackground from "../Assets/Banner Background.png";
 import BannerImage from "../Assets/mantan_shoes logo.png";
 import AboutBackground from "../Assets/About Section Background.png";
 import AboutBackgroundImage from "../Assets/sepatu.png";
-import PickSepatu from "../Assets/pick sepatu.png";
-import ChooseService from "../Assets/cursor-pointer.png";
-import Delivery from "../Assets/delivery.png";
-import ProfilePic from "../Assets/john-doe-image.png";
+import Video1 from "../Assets/Video1.mp4";
+import Video2 from "../Assets/Video2.mp4";
+import Video3 from "../Assets/Video3.mp4";
 import { FiArrowRight } from "react-icons/fi";
-import { BsFillPlayCircleFill } from "react-icons/bs";
-import { AiFillStar } from "react-icons/ai";
 
 const HomePage = () => {
   const workInfoData = [
     {
-      image: PickSepatu,
-      title: "Pick Shoes",
-      text: "Pilih sepatu yang ingin kamu rawat. Mulai dari sneakers hingga boots, Mantan Shoes siap kasih perawatan terbaik untuk semua jenis sepatu!",
+      image: Video1,  
     },
     {
-      image: ChooseService,
-      title: "Choose Service",
-      text: "Pilih layanan sesuai kebutuhan sepatu kamu – dari deep clean, deodorizing, hingga stain removal. Kami punya paket lengkap untuk bikin sepatu kamu kembali maksimal!",
+      image: Video2,
     },
     {
-      image: Delivery,
-      title: "Fast Deliveries",
-      text: "Sepatu selesai dan siap diantar! Kami pastikan sepatu kamu balik dengan tampilan yang lebih fresh, wangi, dan siap menemani aktivitas kamu lagi!",
+      image: Video3,
     },
   ];
 
@@ -35,23 +25,23 @@ const HomePage = () => {
       
       {/* Home Banner Section */}
       <div className="relative flex pt-12 ml-5 mt-20">
-        {/* <div className="absolute top-[-200px] right-[-170px] z-[-2] max-w-[700px]">
-          <img src={BannerBackground} alt="Banner Background" className="w-full h-auto" />
-        </div> */}
         <div className="flex-1 flex flex-col justify-center items-start px-6 text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-600 max-w-xl mb-4">Buat mantan lo balik dengan sepatu bersih dan wangi!</h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-xl mb-6">Sepatu kotor? Biar kami yang urus. Mantan Shoes siap balikin sepatu lo ke mode on-point!</p>
+          <h1 className="text-6xl sm:text-7xl font-bold text-gray-600 max-w-xl mb-4 ml-20">Buat mantan lo balik dengan sepatu bersih dan wangi!</h1>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-xl mb-6 ml-20">Sepatu kotor? Biar kami yang urus. Mantan Shoes Clean siap balikin sepatu lo ke mode on-point!</p>
           <a href="/DropPoint" className="w-full sm:w-auto">
-            <button className="bg-blue-600 text-white py-3 px-8 w-full rounded-full hover:bg-blue-700 transition flex items-center justify-center">
-              Temukan Lokasi Cuci <FiArrowRight className="ml-2" />
+            <button className="bg-blue-600 text-white py-3 px-8 w-full rounded-full hover:bg-blue-700 transition flex items-center justify-center ml-20">
+              Temukan Drop Point <FiArrowRight className="ml-2" />
             </button>
           </a>
         </div>
+        {/* <div>
+          <img src={BannerBackground} alt="Banner Background" className="w-[60%] mx-auto md:w-[40%] h-auto"/>
+        </div> */}
         <div className="flex-1">
-          <img src={BannerImage} alt="Banner Image" className="w-[60%] mx-auto md:w-[40%] h-auto" />
+          <img src={BannerImage} alt="Banner Image" className="w-[60%] mx-auto md:w-[60%] h-auto" />
         </div>
       </div>
-
+      
       {/* About Section */}
       <div className="mt-52 relative flex flex-col md:flex-row items-center">
         <div className="absolute left-[-150px] z-[-2]">
@@ -77,9 +67,8 @@ const HomePage = () => {
           <div className="flex gap-4">
             <a href="/about">
             <button className="py-3 px-8 bg-transparent border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">
-              Learn More
+              About Us
             </button>
-            
             </a>
           </div>
         </div>
@@ -87,15 +76,22 @@ const HomePage = () => {
 
       {/* Work Section */}
       <div className="mt-32 text-center">
-        <p className="text-xl text-blue-600 font-semibold mb-2  ">Work</p>
+        <p className="text-xl text-blue-600 font-semibold mb-2">Work</p>
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-600 mb-6">How It Works</h1>
         <p className="text-lg text-gray-600 max-w-xl mx-auto mb-12">
           Cara Mantan Shoes Bikin Sepatu Kamu Tetap On-Point: Setiap Langkah Didesain untuk Hasil Terbaik
         </p>
-        <div className="flex flex-wrap justify-center gap-8">
-          {workInfoData.map((data) => (
-            <div className="bg-white p-8 rounded-xl shadow-md w-80 text-center">
-              <img src={data.image} alt={data.title} className="w-24 h-24 mx-auto mb-4" />
+        <div className="flex flex-wrap justify-center gap-8 mb-10">
+          {workInfoData.map((data, index) => (
+            <div key={index} className="bg-white p-8 rounded-xl shadow-md w-80 text-center">
+              <video 
+                src={data.image} 
+                autoPlay 
+                loop 
+                muted 
+                className="w-full h-auto mx-auto mb-4" 
+                alt={data.title}
+              />
               <h2 className="text-xl font-semibold text-gray-700 mb-4">{data.title}</h2>
               <p className="text-gray-600">{data.text}</p>
             </div>
@@ -104,7 +100,7 @@ const HomePage = () => {
       </div>
 
       {/* Testimonial Section */}
-      <div className="mt-32 bg-white py-12 px-6 rounded-xl shadow-lg max-w-lg mx-auto text-center mb-10">
+      {/* <div className="mt-32 bg-white py-12 px-6 rounded-xl shadow-lg max-w-lg mx-auto text-center mb-10">
         <img src={ProfilePic} alt="Profile" className="w-24 h-24 rounded-full mx-auto mb-6" />
         <p className="text-xl font-semibold text-gray-700 mb-6">
           Gak nyangka sepatu lama bisa balik se-fresh ini. Mantan Shoes bener-bener detail banget pas bersihin. Recommended buat yang mau sepatu kembali kece!
@@ -117,7 +113,7 @@ const HomePage = () => {
           <AiFillStar color="#0A61AA" />
         </div>
         <h2 className="text-lg font-semibold text-gray-700">Dhio Anugrah</h2>
-      </div>
+      </div> */}
     </div>
   );
 };

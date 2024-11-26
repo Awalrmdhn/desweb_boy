@@ -7,15 +7,12 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
         
         {/* Logo and Locations */}
-        <div className="flex-1 pr-10">
-            <img src={logoImage} alt="Mantan Shoes Clean Logo" className="h-10 w-auto" />
-        <div className="mt-4 space-y-4">
-           
-          </div>
+        <div className="flex-1 pr-1 mr-20">
+            <img src={logoImage} alt="Mantan Shoes Clean Logo" className="h-20 w-auto mr-[-10]" />
         </div>
 
         {/* PPS Menu */}
-        <div className="flex-1">
+        <div className="flex-1 mb-2">
           <h3 className="text-lg font-semibold">PPS</h3>
           <ul className="mt-4 space-y-2">
             {[...Array(3)].map((_, index) => (
@@ -25,7 +22,7 @@ const Footer = () => {
         </div>
 
         {/* Layanan Menu */}
-        <div className="flex-1">
+        <div className="flex-1 mb-2">
           <h3 className="text-lg font-semibold">Layanan</h3>
           <ul className="mt-4 space-y-2">
             {[...Array(3)].map((_, index) => (
@@ -35,7 +32,7 @@ const Footer = () => {
         </div>
 
         {/* Bantuan dan Panduan */}
-        <div className="flex-1">
+        <div className="flex-1 mb-2">
           <h3 className="text-lg font-semibold">Bantuan dan Panduan</h3>
           <ul className="mt-4 space-y-2">
             <li className="text-gray-600">Syarat dan Ketentuan</li>

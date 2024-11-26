@@ -1,17 +1,17 @@
 import React from 'react';
 import productImage from '../assets/item_1.png'; 
-import HeroImage from '../assets/hero_image.png';
+// import HeroImage from '../assets/hero_image.png';
 import Navbar from '../component/navbar';
 
 const Store = () => {
   // Data produk
   const products = [
-    { name: "Sikat Medium", image: productImage, link: "#" },
-    { name: "Sikat Medium", image: productImage, link: "#" },
-    { name: "Sikat Medium", image: productImage, link: "#" },
-    { name: "Sikat Medium", image: productImage, link: "#" },
-    { name: "Sikat Medium", image: productImage, link: "#" },
-    { name: "Sikat Medium", image: productImage, link: "#" },
+    { name: "Sikat Medium", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
+    { name: "Sikat Kecil", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
+    { name: "Pembersih Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
+    { name: "Pelindung Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
+    { name: "Sikat Khusus", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
+    { name: "Pengering Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
   ];
 
   return (
@@ -43,7 +43,7 @@ const Store = () => {
                <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-40 object-contain rounded-md mb-4" // Ubah "object-cover" menjadi "object-contain"
+                  className="w-full h-40 object-contain rounded-md mb-4" 
                 />
                   <h4 className="font-bold text-lg mb-2">{product.name}</h4>
                   <a

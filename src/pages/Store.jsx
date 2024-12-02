@@ -1,5 +1,8 @@
 import React from 'react';
 import productImage from '../assets/item_1.png'; 
+import productImage2 from '../assets/item_2.png';
+import productImage3 from '../assets/item_3.png';
+import productImage4 from '../assets/item_4.png';
 import HeroImage from '../assets/hero_image.png';
 import Navbar from '../component/navbar';
 
@@ -7,11 +10,11 @@ const Store = () => {
   // Data produk
   const products = [
     { name: "Sikat Medium", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
-    { name: "Sikat Kecil", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
-    { name: "Pembersih Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
-    { name: "Pengering Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
-    { name: "Pelindung Sepatu", image: productImage, link: "https://id.shp.ee/JzoTnUP" },
-    { name: "Sikat Khusus", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
+    { name: "Sikat Kecil", image: productImage4, link: " https://id.shp.ee/LwkW4E7" },
+    { name: "Pembersih Sepatu", image: productImage3, link: "https://id.shp.ee/JzoTnUP" },
+    { name: "Pengering Sepatu", image: productImage2, link: " https://id.shp.ee/LwkW4E7" },
+    { name: "Pelindung Sepatu", image: productImage2, link: "https://id.shp.ee/cUMj8vi" },
+    { name: "Sikat Khusus", image: productImage4, link: "https://id.shp.ee/f7Vn1t4" },
   ];
 
   return (

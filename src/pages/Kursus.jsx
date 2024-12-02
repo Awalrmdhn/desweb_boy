@@ -64,9 +64,13 @@ const Kursus = () => {
         <h1 className="text-black text-3xl font-bold mb-6">Courses</h1>
         <div className="space-y-6">
           {courses.map(course => (
-            <div key={course.id} className="bg-white shadow-md rounded-lg border border-gray-200 p-6 flex items-center space-x-6">
-              <img src={course.imageUrl} alt="Course Thumbnail" className="w-50 h-40 rounded-md object-cover" />
-              <div>
+           <div key={course.id} className="bg-white shadow-md rounded-lg border border-gray-200 p-6 flex items-center space-x-6">
+           <img
+             src={course.imageUrl}
+             alt="Course Thumbnail"
+             className="w-40 h-40 rounded-md object-cover"
+           />
+           <div>
                 <h2 className="text-black text-xl font-bold mb-2">{course.title}</h2>
                 <p className="text-gray-700 mb-4">{course.description}</p>
                 <button className="w-full bg-blue-700 text-white px-3 py-1 rounded-md mt-5">

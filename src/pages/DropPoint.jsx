@@ -1,5 +1,8 @@
 import React from 'react';
 import dropPointImage1 from '../assets/dropPoint1.png'; 
+import dropPointImage2 from '../assets/Moodzy.png'
+import dropPointImage3 from '../assets/otong.png'
+import dropPointImage4 from '../assets/rumahDhio.png'
 import Navbar from '../component/navbar';
 
 const DropPoint = () => {
@@ -8,26 +11,26 @@ const DropPoint = () => {
     {
       name: "Rumah Makan Rizki",
       address: "JL. Sei Wain No.14 RT 33, Karang Joang, Kec. Balikpapan Utara, Kota Balikpapan, Kalimantan Timur 76127",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=-1.2005,116.9000",
+      mapUrl: "https://maps.app.goo.gl/CC9SB6zRr3jruSPv9",
       image: dropPointImage1,
     },
     {
       name: "MoodzySupplyBpn",
       address: "JL.Ruhuni Rahayu II, Sepinggan, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76115",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=-1.2000,116.8900",
-      image: dropPointImage1,
+      mapUrl: "https://maps.app.goo.gl/Ch27z4DXBiQiquTp8",
+      image: dropPointImage2,
     },
     {
       name: "OtongDistro",
       address: "JL. Sungai Ampal, RT.43/RW.No.76, Damai, Kec. Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76124",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=-1.2050,116.9100",
-      image: dropPointImage1,
+      mapUrl: "https://maps.app.goo.gl/2LffoaNBcd24mG2k6",
+      image: dropPointImage3,
     },
     {
       name: "Dhio Cribs",
       address: "Sepinggan, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76116",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=-1.2020,116.8950",
-      image: dropPointImage1,
+      mapUrl: "https://maps.app.goo.gl/5rp5awwCEnckKmZw7",
+      image: dropPointImage4,
     },
   ];
 

@@ -1,19 +1,21 @@
 import React from 'react';
-import productImage from '../assets/item_1.png'; 
-import productImage2 from '../assets/item_2.png';
-import productImage3 from '../assets/item_3.png';
-import productImage4 from '../assets/item_4.png';
+import productImage from '../assets/Sikat_medium.png'; 
+import productImage2 from '../assets/sikat_kecil.png';
+import productImage3 from '../assets/Pembersih.png';
+import productImage4 from '../assets/pengering.png';
+import productImage5 from '../assets/pelindung.png';
+import productImage6 from '../assets/paket_Khusus.png'
 
 
 const Store = () => {
   // Data produk
   const products = [
     { name: "Sikat Medium", image: productImage, link: "https://id.shp.ee/B9pG9Dd" },
-    { name: "Sikat Kecil", image: productImage4, link: " https://id.shp.ee/LwkW4E7" },
+    { name: "Sikat Kecil", image: productImage2, link: " https://id.shp.ee/LwkW4E7" },
     { name: "Pembersih Sepatu", image: productImage3, link: "https://id.shp.ee/JzoTnUP" },
-    { name: "Pengering Sepatu", image: productImage2, link: " https://id.shp.ee/LwkW4E7" },
-    { name: "Pelindung Sepatu", image: productImage2, link: "https://id.shp.ee/cUMj8vi" },
-    { name: "Sikat Khusus", image: productImage4, link: "https://id.shp.ee/f7Vn1t4" },
+    { name: "Pengering Sepatu", image: productImage4, link: " https://id.shp.ee/kANWtSb" },
+    { name: "Pelindung Sepatu", image: productImage5, link: "https://id.shp.ee/cUMj8vi" },
+    { name: "Paket lengkap", image: productImage6, link: "https://id.shp.ee/f7Vn1t4" },
   ];
 
   return (

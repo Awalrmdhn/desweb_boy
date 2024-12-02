@@ -3,8 +3,7 @@ import productImage from '../assets/item_1.png';
 import productImage2 from '../assets/item_2.png';
 import productImage3 from '../assets/item_3.png';
 import productImage4 from '../assets/item_4.png';
-import HeroImage from '../assets/hero_image.png';
-import Navbar from '../component/navbar';
+
 
 const Store = () => {
   // Data produk

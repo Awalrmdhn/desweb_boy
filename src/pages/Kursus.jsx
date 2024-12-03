@@ -12,30 +12,35 @@ const courses = [
     title: 'Treatment Sepatu Kulit',
     description: 'Dalam tutorial ini, kami akan menunjukkan cara yang tepat untuk membersihkan dan merawat sepatu kulit. Anda akan belajar langkah-langkah penting yang akan menjaga sepatu kulit Anda tetap terlihat bersih dan tahan lama.',
     imageUrl: sepatuImageKulit,
+    videoUrl: 'https://youtu.be/DjusFT8yWwI?si=PftnT-_uPMPojpZQ', // Link video sepatu kulit
   },
   {
     id: 2,
     title: 'Treatment Sepatu Kanvas',
     description: 'Dalam tutorial kali ini, kami akan menunjukkan cara mudah dan efektif untuk merawat sepatu kanvas Anda. Dari mencuci hingga merawat, Anda akan mendapatkan pemahaman yang tepat agar sepatu kanvas Anda selalu tampak bersih dan segar.',
     imageUrl: sepatuImageKanvas,
+    videoUrl: 'https://youtu.be/_2y2kKfCipA?si=PrlQ7M359c2OyB-U', // Link video sepatu kanvas
   },
   {
     id: 3,
     title: 'Treatment Sepatu Suede',
     description: 'Dalam tutorial ini, Anda akan belajar memberikan perawatan terbaik untuk sepatu suede dengan benar. Anda akan mengetahui cara membersihkan suede dan cara menjaga sepatu suede tetap dalam kondisi prima.',
     imageUrl: sepatuImageSeude,
+    videoUrl: 'https://youtu.be/WMiol9uOPO0?si=oZzjzX6qowCP4Dcq', // Link video sepatu suede
   },
   {
     id: 4,
     title: 'Treatment Sepatu Sport',
     description: 'Pelajari cara mudah dan tepat dalam merawat sepatu sport Anda agar tetap nyaman dipakai dan tahan lama. Kami akan menunjukkan langkah-langkah dasar dalam menjaga kebersihan dan ketahanan sepatu sport Anda.',
     imageUrl: sepatuImageBola,
+    videoUrl: 'https://youtu.be/nt3Vzz00uVI?si=CzLg7AIiMl-bVg0a', // Link video sepatu sport
   },
   {
     id: 5,
     title: 'Treatment Sepatu Anak',
     description: 'Kami akan membahas cara membersihkan dan merawat sepatu anak dengan mudah dan aman. Anda akan belajar langkah-langkah sederhana yang bisa diterapkan pada sepatu anak untuk menjaga kebersihannya.',
     imageUrl: sepatuImageAnak,
+    videoUrl: 'https://youtu.be/OfLHAtsUl5A?si=e4Jlazz90sBQwYbP', // Link video sepatu anak
   },
 ];
 
@@ -68,14 +73,19 @@ const Kursus = () => {
            <img
              src={course.imageUrl}
              alt="Course Thumbnail"
-             className="w-40 h-40 rounded-md object-cover"
+             className="w-40 h-40 rounded-md object-cover"  
            />
            <div>
                 <h2 className="text-black text-xl font-bold mb-2">{course.title}</h2>
                 <p className="text-gray-700 mb-4">{course.description}</p>
-                <button className="w-full bg-blue-700 text-white px-3 py-1 rounded-md mt-5">
+                <a
+                  href={course.videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-blue-700 text-white px-3 py-1 rounded-md mt-5 inline-block text-center"
+                >
                   Tonton video
-                </button>
+                </a>
               </div>
             </div>
           ))}

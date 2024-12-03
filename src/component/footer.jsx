@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from "../assets/mantan_typography.png"; // Sesuaikan path logo sesuai lokasi
+import logoImage from "../assets/mantan_typography.png";
 
 const Footer = () => {
   const dropPoints = [
@@ -18,7 +18,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white p-8 border-t">
+    <footer className="bg-white p-8 border-t pt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
         
         {/* Logo and Locations */}
@@ -32,8 +32,8 @@ const Footer = () => {
           <ul className="mt-4 space-y-2">
             {dropPoints.map((dropPoint, index) => (
               <li key={index} className="text-gray-600">
-                <strong className="text-sm">{dropPoint.name}</strong> {/* Nama tetap text-sm */}
-                <p className="text-xs mt-1 my-2">{dropPoint.address}</p> {/* Perkecil alamat */}
+                <strong className="text-sm">{dropPoint.name}</strong>
+                <p className="text-xs mt-1 my-2">{dropPoint.address}</p> 
               </li>
             ))}
           </ul>

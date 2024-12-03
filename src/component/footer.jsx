@@ -54,11 +54,9 @@ const Footer = () => {
         {/* Bantuan dan Panduan */}
         <div className="flex-1 mb-2">
           <h3 className="text-lg font-semibold">Bantuan dan Panduan</h3>
-          <ul className="mt-4 space-y-2">
-            <li className="text-gray-600">Syarat dan Ketentuan</li>
-            <li className="text-gray-600">Kebijakan Privasi</li>
-            <li className="text-gray-600">Bantuan</li>
-          </ul>
+          <a href="https://wa.me/6285752556024" target="_blank" rel="noopener noreferrer" className="text-2xl  text-gray-600 hover:text-black">
+                    Whatsapp
+            </a>
         </div>
       </div>
 
